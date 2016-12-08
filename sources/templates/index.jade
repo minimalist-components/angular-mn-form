@@ -9,7 +9,7 @@ html(ng-app='app')
     }
 
 body(ng-controller='IndexController as controller')
-  mn-form(name='loginForm' submit='controller.submit()')
+  mn-form(submit='controller.submit()')
     h2 mn-form
     input(placeholder='username' ng-model='controller.credentials.username', required)
     button(type='submit') Send
