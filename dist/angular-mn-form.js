@@ -1,0 +1,2 @@
+"use strict";function MnFormDirective(){function link(scope,element,attributes){if(attributes.submit){var form=element.find("form");form.bind("submit",function(){var valid=scope[attributes.name].$valid;valid&&scope.$eval(attributes.submit)})}}return{restrict:"E",link:link}}angular.module("mn-form",[]),angular.module("mn-form").directive("mnForm",MnFormDirective);
+//# sourceMappingURL=angular-mn-form.js.map
