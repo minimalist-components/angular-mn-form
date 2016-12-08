@@ -38,7 +38,7 @@ angular.module('app', [
 And then, in your html, you can use the tag:
 
 ```html
-<mn-form name="form" submit='controller.save()'>
+<mn-form submit='controller.save()'>
   <!-- content of form here, inputs, textarea, select, buttons, etc -->
 </mn-form>
 ```
