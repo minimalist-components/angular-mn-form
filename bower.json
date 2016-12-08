@@ -1,6 +1,6 @@
 {
   "name": "angular-mn-form",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "An angular directive to mn-form",
   "main": [
     "dist/angular-mn-form.js"
@@ -12,6 +12,6 @@
   "homepage": "",
   "dependencies": {
     "angular": "^1.5.9",
-    "mn-form": "^0.0.2"
+    "mn-form": "^0.0.3"
   }
 }

@@ -2,7 +2,7 @@ angular
   .module('mn-form')
   .directive('mnForm', MnFormDirective)
 
-function MnFormDirective($compile) {
+function MnFormDirective() {
   return {
     restrict: 'E',
     link,
@@ -10,11 +10,7 @@ function MnFormDirective($compile) {
 
   function link(scope, element, attributes) {
     const form = element.find('form')
-    const instanceIndex = Array.from(document.querySelectorAll('mn-form')).indexOf(element[0])
-
-    const formName = form.attr('name') || `form${instanceIndex > 0 ? instanceIndex : ''}`
-    form.attr('name', formName)
-    $compile(form)(scope)
+    const formName = form.attr('name')
 
     if (attributes.submit) {
       form.bind('submit', () => {

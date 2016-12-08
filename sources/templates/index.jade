@@ -9,14 +9,15 @@ html(ng-app='app')
     }
 
 body(ng-controller='IndexController as controller')
-  mn-form(submit='controller.submit()')
+  //- mn-form(submit='controller.submit()')
     h2 mn-form
-    input(placeholder='username' ng-model='controller.credentials.username', required)
+    input(placeholder='username' ng-model='controller.credentials.username' required)
     button(type='submit') Send
 
-  mn-form(submit='controller.submit()')
+  //- form(name='loginForm', ng-submit='controller.submit()')
+  mn-form(name='test' submit='controller.submit()')
     h2 mn-form 2
-    input(placeholder='username' ng-model='controller.credentials.username', required)
+    input(placeholder='email' ng-model='controller.credentials.email' required type='email')
     button(type='submit') Send
 
   script(src='vendor.js')
