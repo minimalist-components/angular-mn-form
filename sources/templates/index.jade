@@ -17,7 +17,7 @@ body(ng-controller='IndexController as controller')
   //- form(name='loginForm', ng-submit='controller.submit()')
   mn-form(name='test' submit='controller.submit()')
     h2 mn-form 2
-    input(placeholder='email' ng-model='controller.credentials.email' required type='email')
+    input(placeholder='email' ng-model='controller.credentials.email' required)
     button(type='submit') Send
 
   script(src='vendor.js')

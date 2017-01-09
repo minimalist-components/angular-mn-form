@@ -9,17 +9,10 @@ function MnFormDirective() {
   }
 
   function link(scope, element, attributes) {
-    const form = element.find('form')
-    const formName = form.attr('name')
-
     if (attributes.submit) {
-      form.bind('submit', () => {
-        const valid = scope[formName].$valid
-
-        if (valid) {
-          scope.$eval(attributes.submit)
-        }
-      })
+      element[0].onSubmit = function() {
+        scope.$eval(attributes.submit)
+      }
     }
   }
 }

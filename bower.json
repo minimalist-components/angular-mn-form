@@ -12,6 +12,6 @@
   "homepage": "",
   "dependencies": {
     "angular": "^1.5.9",
-    "mn-form": "^0.0.3"
+    "mn-form": "^0.0.5"
   }
 }
