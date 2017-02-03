@@ -8,7 +8,7 @@ An angular directive to [mn-form](https://github.com/minimalist-components/mn-fo
 
 See the [demo](https://minimalist-components.github.io/mn-form)
 
-[![preview demo](https://raw.githubusercontent.com/minimalist-components/mn-form/master/preview.gif)](https://minimalist-components.github.io/angular-mn-form/)
+<!-- [![preview demo](https://raw.githubusercontent.com/minimalist-components/mn-form/master/preview.gif)](https://minimalist-components.github.io/angular-mn-form/) -->
 
 ### Install
 
