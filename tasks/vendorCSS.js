@@ -1,14 +1,24 @@
 import gulp from 'gulp'
-import bowerFiles from 'bower-files'
+import packageFiles from 'package-files'
+import minifyCss from 'gulp-clean-css'
 import concat from 'gulp-concat'
-import minifyCss from 'gulp-minify-css'
 
 gulp.task('vendorCSS', vendorCSSTask)
 
 function vendorCSSTask() {
+  const devDependencies = [
+    'mn-gh-page',
+    'mn-input',
+    'mn-button',
+  ]
+
+  const dependencies = packageFiles(devDependencies)
+    .filter(dep => dep.endsWith('.css'))
+    .filter(dep => !dep.includes('open-color.css'))
+
   return gulp
-    .src(bowerFiles().ext('css').files)
+    .src(dependencies)
     .pipe(concat('vendor.css'))
     .pipe(minifyCss({keepSpecialComments: 0}))
-    .pipe(gulp.dest('./public/styles'))
+    .pipe(gulp.dest('./docs'))
 }

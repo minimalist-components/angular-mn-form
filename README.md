@@ -1,24 +1,22 @@
-<!-- [![Bower version](https://badge.fury.io/bo/angular-mn-form.svg)](https://badge.fury.io/bo/angular-mn-form)
-[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php) -->   
-
+[![npm version](https://badge.fury.io/js/angular-mn-form.svg)](https://badge.fury.io/js/angular-mn-form)
+[![Dependency Status](https://gemnasium.com/badges/github.com/minimalist-components/angular-mn-form.svg)](https://gemnasium.com/github.com/minimalist-components/angular-mn-form)
+[![MIT Licence](https://badges.frapsoft.com/os/mit/mit.svg?v=103)](https://opensource.org/licenses/mit-license.php)  
 
 # angular-mn-form
 
 An angular directive to [mn-form](https://github.com/minimalist-components/mn-form)
 
-<!-- See the [demo](http://codepen.io/darlanmendonca/full/akgXQq) -->
+See the [demo](https://minimalist-components.github.io/mn-form)
 
-[![preview demo](https://raw.githubusercontent.com/minimalist-components/mn-form/master/sources/example/mn-form.gif)](http://codepen.io/darlanmendonca/full/akgXQq)
+[![preview demo](https://raw.githubusercontent.com/minimalist-components/mn-form/master/preview.gif)](https://minimalist-components.github.io/angular-mn-form/)
 
 ### Install
 
-With bower
-
 ```sh
-bower install --save angular-mn-form
+npm install --save angular-mn-form
 ```
 
-Or just download the main files ```dist/mn-form.js``` in your project, and make a reference to their, like:
+And bundle dependencies and main files in [dist/](https://github.com/minimalist-components/mn-select/tree/master/dist) with your preferred tool.
 
 ```html
 <link rel="stylesheet" href="path/to/vendor.css">
@@ -47,4 +45,3 @@ Note, the `submit` directive, will check validity of form, and only if is valid,
 
 
 For more details check docs [mn-form docs](https://github.com/minimalist-components/mn-form).
-

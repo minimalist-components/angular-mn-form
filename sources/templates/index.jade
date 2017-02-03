@@ -1,46 +1,8 @@
-html(ng-app='app')
-  meta(name='viewport' content='width=device-width, user-scalable=no')
-  link(rel='stylesheet', href='https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css')
-  link(rel='stylesheet' href='https://fonts.googleapis.com/css?family=Open+Sans')
-  style.
-    body {
-      font-family: 'Open Sans', sans-serif;
-      -webkit-font-smoothing: antialiased;
-    }
+extends demo
 
-body(ng-controller='IndexController as controller')
-  //- mn-form(submit='controller.submit()')
-    h2 mn-form
-    input(placeholder='username' ng-model='controller.credentials.username' required)
-    button(type='submit') Send
+block styles
+  link(rel='stylesheet' href='https://rawgit.com/minimalist-components/angular-mn-form/master/docs/vendor.css')
 
-  //- form(name='loginForm', ng-submit='controller.submit()')
-  mn-form(name='test' submit='controller.submit()')
-    h2 mn-form 2
-    input(placeholder='email' ng-model='controller.credentials.email' required)
-    button(type='submit') Send
-
-  script(src='vendor.js')
-  script(src='angular-mn-form.js')
-  script.
-    angular.module('app', [
-      'mn-form',
-    ])
-
-    angular
-      .module('app')
-      .controller('IndexController', IndexController)
-
-    function IndexController() {
-      this.credentials = {
-        username: undefined,
-        password: undefined,
-      }
-
-      this.submit = submit
-
-      function submit() {
-        console.log('submiting', this.credentials)
-      }
-    }
-
+block scripts
+  script(src='https://rawgit.com/minimalist-components/angular-mn-form/master/docs/vendor.js')
+  script(src='https://rawgit.com/minimalist-components/angular-mn-form/master/dist/angular-mn-form.js')
