@@ -1,8 +1,8 @@
 {
   "name": "angular-mn-form",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "An angular directive to mn-form",
-  "main": "dist/angular-mn-number.js",
+  "main": "dist/angular-mn-form.js",
   "files": [
     "dist"
   ],
