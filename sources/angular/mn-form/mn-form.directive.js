@@ -14,5 +14,17 @@ function MnFormDirective() {
         scope.$eval(attributes.submit)
       }
     }
+
+    scope.$watch(() => element.attr('disabled'), value => {
+      if (value === 'disabled') {
+        element[0].setDisabledOrReadOnly()
+      }
+    })
+
+    scope.$watch(() => element.attr('readonly'), value => {
+      if (value === 'readonly') {
+        element[0].setDisabledOrReadOnly()
+      }
+    })
   }
 }
