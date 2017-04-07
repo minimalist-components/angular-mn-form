@@ -42,7 +42,7 @@
     "eslint-plugin-angular": "^2.2.1",
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
-    "gulp-clean-css": "^2.3.2",
+    "gulp-clean-css": "^3.0.4",
     "gulp-concat": "^2.6.0",
     "gulp-eslint": "^3.0.1",
     "gulp-jade": "^1.1.0",
@@ -53,10 +53,10 @@
     "gulp-sourcemaps": "^2.5.1",
     "gulp-sync": "^0.1.4",
     "gulp-uglify": "^2.0.0",
-    "mn-button": "^0.0.4",
+    "mn-button": "~0.0.6",
     "mn-gh-page": "git+https://github.com/minimalist-components/gh-page.git",
-    "mn-input": "^0.0.4",
-    "package-files": "^0.0.5",
+    "mn-input": "~0.0.8",
+    "package-files": "~0.0.6",
     "require-all": "^2.0.0"
   }
 }
